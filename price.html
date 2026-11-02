@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://mezhplan-xml.veridok.ru/price.html">
+<title>Цена — XML межевого плана онлайн</title>
+<meta name="description" content="Цена формирования XML межевого плана по схеме Росреестра в браузере: для одного кадастрового инженера или бюро до пяти инженеров.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">XML межевого плана</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Межевые планы в XML по действующей схеме, проверка до подачи и кабинет в браузере.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>Один инженер</b><span>2 490 ₽ в год — межевые планы без ограничения числа.</span><br><a class="btn" href="pay.html?plan=inzhener" data-ev="payment_click click_pay_inzhener">Оплатить — 2 490 ₽</a></div>
+      <div class="card"><b>Бюро до пяти инженеров</b><span>9 900 ₽ в год — кабинеты для пяти инженеров и общий список планов бюро.</span><br><a class="btn" href="pay.html?plan=byuro" data-ev="payment_click click_pay_byuro">Оплатить — 9 900 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">XML по сведениям, которые вносит инженер. За содержание межевого плана и его подачу отвечает кадастровый инженер.</p>
+</div></footer>
+
+</body>
+</html>
